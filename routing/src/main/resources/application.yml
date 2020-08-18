@@ -1,0 +1,9 @@
+server:
+  port: 40001
+
+zuul:
+  routes:
+    foo:
+      path: /foos/**
+      url: http://localhost:40100/foos
+
