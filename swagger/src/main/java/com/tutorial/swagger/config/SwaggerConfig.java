@@ -28,7 +28,7 @@ public class SwaggerConfig {
 
     @Bean
     public Docket apiV1() {
-        version = "V21296918249";
+        version = "V12524124";
         title = "tutorial Swagger API_" + version;
 
         return new Docket(DocumentationType.SWAGGER_2)
