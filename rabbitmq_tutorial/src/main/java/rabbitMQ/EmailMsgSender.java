@@ -1,6 +1,6 @@
-package com.mq.tutorial.rabbitMQ;
+package rabbitMQ;
 
-import com.mq.tutorial.rabbitMQ.vo.Email;
+import rabbitMQ.vo.Email;
 import org.springframework.amqp.core.DirectExchange;
 import org.springframework.amqp.core.TopicExchange;
 import org.springframework.amqp.rabbit.connection.SimpleResourceHolder;
@@ -8,7 +8,6 @@ import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
 import java.util.Map;
 
 @Service

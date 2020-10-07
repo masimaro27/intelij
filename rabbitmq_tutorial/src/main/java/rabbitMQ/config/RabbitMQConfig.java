@@ -1,6 +1,6 @@
-package com.mq.tutorial.rabbitMQ.config;
+package rabbitMQ.config;
 
-import com.mq.tutorial.rabbitMQ.Receiver;
+import rabbitMQ.Receiver;
 import org.springframework.amqp.core.*;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;

@@ -1,6 +1,6 @@
-package com.mq.tutorial.rabbitMQ;
+package rabbitMQ;
 
-import com.mq.tutorial.rabbitMQ.vo.Email;
+import rabbitMQ.vo.Email;
 import org.springframework.amqp.rabbit.annotation.Exchange;
 import org.springframework.amqp.rabbit.annotation.Queue;
 import org.springframework.amqp.rabbit.annotation.QueueBinding;

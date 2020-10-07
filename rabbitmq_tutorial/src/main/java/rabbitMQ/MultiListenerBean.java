@@ -1,8 +1,8 @@
-package com.mq.tutorial.rabbitMQ;
+package rabbitMQ;
 
-import com.mq.tutorial.rabbitMQ.vo.Cat;
-import com.mq.tutorial.rabbitMQ.vo.Hat;
-import com.mq.tutorial.rabbitMQ.vo.Thing2;
+import rabbitMQ.vo.Cat;
+import rabbitMQ.vo.Hat;
+import rabbitMQ.vo.Thing2;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.messaging.handler.annotation.Header;

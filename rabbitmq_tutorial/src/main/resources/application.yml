@@ -5,4 +5,11 @@ spring:
     username: minhyuk.yoo
     password: Xmfkdlvotm123$
     virtual-host: dev-vhost
+    publisher-confirm-type: correlated
+    publisher-returns: true
+    template:
+      mandatory: true
+
+
+
 

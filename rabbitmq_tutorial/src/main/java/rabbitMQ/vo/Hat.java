@@ -1,4 +1,4 @@
-package com.mq.tutorial.rabbitMQ.vo;
+package rabbitMQ.vo;
 
 import lombok.Data;
 
