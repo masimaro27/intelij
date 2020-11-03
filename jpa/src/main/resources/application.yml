@@ -20,4 +20,4 @@ spring:
     hibernate:
       ddl-auto: validate
 
-
+ 
