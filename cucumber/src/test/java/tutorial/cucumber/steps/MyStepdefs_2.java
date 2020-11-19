@@ -1,6 +1,8 @@
 package tutorial.cucumber.steps;
 
-public class MyStepdefs_2 {
+import tutorial.cucumber.SpringIntegrationTest;
+
+public class MyStepdefs_2 extends SpringIntegrationTest {
     @io.cucumber.java.en.Given("I have {int} beer cans2")
     public void iHaveOpeningBalanceBeerCans(int ob) {
         System.out.println(ob);

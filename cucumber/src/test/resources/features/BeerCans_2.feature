@@ -1,5 +1,5 @@
-Feature: Beer cans
-  Scenario Outline: Counting beer cans
+Feature: Beer cans2
+  Scenario Outline: Counting beer cans2
     Given I have <opening balance> beer cans2
     And I have drunk <processed> beer cans2
     When I go to my fridge2
