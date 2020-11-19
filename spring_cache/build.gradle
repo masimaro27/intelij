@@ -22,6 +22,12 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.boot:spring-boot-starter-cache'
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.11.2'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.11.2'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.2'
+    implementation 'com.fasterxml.jackson.module:jackson-module-parameter-names:2.11.2'
+
     implementation 'org.springframework:spring-context-support'
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'

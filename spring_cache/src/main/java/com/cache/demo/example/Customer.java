@@ -1,8 +1,10 @@
 package com.cache.demo.example;
 
-public class Customer {
+import java.io.Serializable;
 
-    private int id;
+public class Customer implements Serializable {
+
+    private String id;
     private String name;
     private String address;
 
@@ -15,13 +17,12 @@ public class Customer {
         this.address = address;
     }
 
-    //
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(final int id) {
+    public void setId(final String id) {
         this.id = id;
     }
 
