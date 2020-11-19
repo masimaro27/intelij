@@ -9,4 +9,5 @@ import java.util.Optional;
 
 @Repository
 public interface AdmOperGroupRepository extends JpaRepository<AdmOperGroup, Long>, AdmOperGroupCustomRepository {
+
 }

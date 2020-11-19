@@ -31,5 +31,11 @@ public class SysApiMenuMap {
     @JoinColumn(name = "IDX_SYS_API")
     private SysApi sysApi;
 
-
+    @Override
+    public String toString() {
+        return "SysApiMenuMap{" +
+                "idxSysMenu=" + idxSysMenu +
+                ", idxSysApi=" + idxSysApi +
+                '}';
+    }
 }

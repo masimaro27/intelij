@@ -37,7 +37,7 @@ public class AdmOperator{
         groups.stream()
                 .flatMap((group) -> group.getAdmOperGroup().getPermissions().stream())
                 .forEach(p -> {
-                    for (SysApiMenuMap  menuApi: p.getSysMenu().getApis()) {
+                    for (SysApiMenuMap  menuApi: p.getSysMenu().getApi()) {
                         auth.add(new CustomGrantedAuthority(menuApi.getSysApi().getApiUrl(), p.getPermission()));
                     }
                 });

@@ -1,33 +1,25 @@
 package com.example.access_control.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.example.access_control.entity.listener.RoleEventListener;
+import lombok.*;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
 import java.util.Date;
 
 @Data
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @IdClass(AdmGroupPermissionPK.class)
+@EntityListeners(RoleEventListener.class)
 @Entity
 @Table(name = "ADM_GROUP_PERMISSION")
 public class AdmGroupPermission {
-    @Id
-    @Column(name = "IDX_ADM_OPER_GROUP", insertable = false, updatable = false)
-    private Long idxAdmOperGroup;
-    @Id
-    @Column(name = "IDX_ADM_SYS_MENU", insertable = false, updatable = false)
-    private Long idxAdmSysMenu;
 
-    @ManyToOne
+    @Id
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "IDX_ADM_OPER_GROUP")
     private AdmOperGroup admOperGroup;
-
+    @Id
     @ManyToOne
     @JoinColumn(name = "IDX_ADM_SYS_MENU")
     private SysMenu sysMenu;
@@ -41,4 +33,14 @@ public class AdmGroupPermission {
     @Temporal(TemporalType.TIMESTAMP)
     @Column(insertable = false, updatable = false)
     private Date createTime;
+
+    public void setAdmOperGroup(AdmOperGroup group) {
+        System.out.println("setAdmOperGroup");
+        this.admOperGroup = group;
+        if (!group.getPermissions().contains(this)) {
+            group.getPermissions().add(this);
+        }
+    }
+
+
 }

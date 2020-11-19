@@ -30,7 +30,11 @@ public class SysMenu {
     private Date createTime;
 
     @Builder.Default
-    @OneToMany(mappedBy = "sysApi", fetch = FetchType.LAZY)
-    private List<SysApiMenuMap> apis = new ArrayList<>();
+    @OneToMany(mappedBy = "sysMenu", fetch = FetchType.LAZY)
+    private List<AdmGroupPermission> permissions = new ArrayList<>();
+
+    @Builder.Default
+    @OneToMany(mappedBy = "sysApi", fetch = FetchType.EAGER)
+    private List<SysApiMenuMap> api = new ArrayList<>();
 
 }

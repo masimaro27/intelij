@@ -1,0 +1,4 @@
+package com.example.access_control.repository.admGroupPermission;
+
+public class AdmGroupPermissionCustomRepositoryImpl implements AdmGroupPermissionCustomRepository {
+}
