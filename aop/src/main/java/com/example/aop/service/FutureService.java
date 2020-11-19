@@ -28,6 +28,7 @@ public class FutureService {
         }).thenCompose((child) -> CompletableFuture.supplyAsync(() -> {
           return child;
         }));
+        System.out.println("SLEEP");
 
         return future.get();
     }
